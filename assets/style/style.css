@@ -10,6 +10,7 @@ body {
 
 /* header section*/
 header {
+    min-height: 100px;
     display: flex;
     flex-wrap: wrap;
     background-color: var(--header-color);
@@ -67,7 +68,17 @@ h2 {
 }
 
 /* about me */
-
+img {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 2%;
+}
+#about-me p {
+    display: flex;
+    align-items: center;
+    
+}
 section {
     display: flex;
     justify-content: space-between;
@@ -137,33 +148,32 @@ article div {
 
 
 .surf-report {
-    background-image: url(../images/background-image.png);
+    background-image: url(../images/Surf-report-image.jpg);
     width: 100%;
     min-height: 300px;
 
 }
 
 .LED-wall {
-
-    background-image: url(../images/background-image.png);
-
+    background-image: url(../images/LED-wall-image.jpg);
+    
 }
 
 .calculator {
 
-    background-image: url(../images/background-image.png);
+    background-image: url(../images/calculator-image.jpg);
 
 }
 
 .pastel-puzzels {
 
-    background-image: url(../images/background-image.png);
+    background-image: url(../images/pastel-puzzels.jpg);
 
 }
 
 .run-buddy {
 
-    background-image: url(../images/background-image.png);
+    background-image: url(../images/run-buddy-image.jpg);
 
 }
 
@@ -173,4 +183,11 @@ article div {
     color: var(--subheading_text_color);
     font-weight: bolder;
     font-size: 20px;
+}
+
+/* media query */
+@media screen and (max-width: 720px) {
+    ul{
+        flex-direction: column;
+    }
 }
